@@ -46,6 +46,9 @@ public class CarController : MonoBehaviour
     void HandleMotor() {
         frontLeftWheelCollider.motorTorque = verticalInput * motorForce;
         frontRightWheelCollider.motorTorque = verticalInput * motorForce;
+        backLeftWheelCollider.motorTorque = verticalInput * motorForce;
+        backRightWheelCollider.motorTorque = verticalInput * motorForce;
+
         currentBrakeForce = isBreaking ? brakeForce : 0f;
         ApplyBraking();
         //if(isBreaking) {
