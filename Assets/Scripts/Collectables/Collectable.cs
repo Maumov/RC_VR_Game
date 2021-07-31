@@ -12,6 +12,7 @@ public class Collectable : MonoBehaviour, ICollectable
     }
     
     public void Collect() {
+        gameObject.SetActive(false);
         Debug.Log("Item Collected: "+ name);
     }
 
