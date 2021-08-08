@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class CarController : MonoBehaviour
 {
-    private const string HORIZONTAL = "Horizontal";
-    private const string VERTICAL = "Vertical";
-    private const string BRAKE = "Jump";
+    PlayerInputs playerInputs;
 
-    private float horizontalInput;
-    private float verticalInput;
+    [SerializeField] float horizontalInput;
+    [SerializeField] float verticalInput;
     private float currentSteeringAngle;
     private float currentBrakeForce;
     private bool isBreaking;
@@ -29,19 +27,31 @@ public class CarController : MonoBehaviour
     [SerializeField] private Transform backLeftWheelTransform;
     [SerializeField] private Transform backRightWheelTransform;
 
+    private void Start() {
+        playerInputs = GetComponent<PlayerInputs>();
+    }
 
     private void FixedUpdate() {
-        GetInput();
         HandleMotor();
         HandleSteering();
         UpdateWheels();
     }
 
-    void GetInput() {
-        horizontalInput = Input.GetAxis(HORIZONTAL);
-        verticalInput = Input.GetAxis(VERTICAL);
-        isBreaking = Input.GetButton(BRAKE);
+    public void SetHorizontalInputClamped(float value) {
+        horizontalInput = Mathf.Clamp(value, -maxSteeringAngle, maxSteeringAngle);
+        horizontalInput /= maxSteeringAngle;
     }
+
+    public void SetHorizontalInput(float value) {
+        horizontalInput = value;
+    }
+    public void SetVerticalInput(float value) {
+        verticalInput = value;
+    }
+    public void SetIsBreaking(bool value) {
+        isBreaking = value;
+    }
+
 
     void HandleMotor() {
         frontLeftWheelCollider.motorTorque = verticalInput * motorForce;
