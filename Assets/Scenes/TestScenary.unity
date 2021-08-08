@@ -2239,20 +2239,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1866131447}
     - target: {fileID: 8115460006256894454, guid: 4b45fe8e448e3b845ae51da790ed21d5, type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 1866131447}
-    - target: {fileID: 8115460006256894454, guid: 4b45fe8e448e3b845ae51da790ed21d5, type: 3}
       propertyPath: circuit
       value: 
       objectReference: {fileID: 2061657572}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b45fe8e448e3b845ae51da790ed21d5, type: 3}
---- !u!4 &665973356 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4396719116293325987, guid: 4b45fe8e448e3b845ae51da790ed21d5, type: 3}
-  m_PrefabInstance: {fileID: 665973354}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &670475070
 GameObject:
   m_ObjectHideFlags: 0
