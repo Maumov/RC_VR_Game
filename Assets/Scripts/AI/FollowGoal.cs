@@ -37,9 +37,11 @@ public class FollowGoal : MonoBehaviour
         Debug.Log(Vector3.Angle(goal.forward, transform.forward) > brakeAngle && speed > 0.1f);
         if(Vector3.Angle(goal.forward,transform.forward) > brakeAngle && speed > 0.1f) {
             carController.SetVerticalInput(-1f);
+            carController.SetIsBreaking(true);
             //speed = Mathf.Clamp(speed - (deceleration * Time.deltaTime), minSpeed, maxSpeed);
         } else {
             carController.SetVerticalInput(1f);
+            carController.SetIsBreaking(false);
             //speed = Mathf.Clamp(speed + (acceleration * Time.deltaTime), minSpeed, maxSpeed);
         }
         //transform.Translate(0f, 0f, speed * Time.deltaTime);

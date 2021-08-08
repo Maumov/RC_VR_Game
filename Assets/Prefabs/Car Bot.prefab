@@ -608,6 +608,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f8981336c6813f479f3f4a55a31abd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  horizontalInput: 0
+  verticalInput: 0
   motorForce: 30
   brakeForce: 15
   maxSteeringAngle: 25
@@ -686,12 +688,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circuit: {fileID: 0}
-  lookAheadForTargetOffset: 5
+  lookAheadForTargetOffset: 4
   lookAheadForTargetFactor: 0.1
-  lookAheadForSpeedOffset: 10
+  lookAheadForSpeedOffset: 6
   lookAheadForSpeedFactor: 5
   progressStyle: 0
-  pointToPointThreshold: 10
+  pointToPointThreshold: 1
   target: {fileID: 0}
 --- !u!114 &5567723985709212195
 MonoBehaviour:
@@ -706,7 +708,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goal: {fileID: 0}
-  rotSpeed: 5
 --- !u!1 &4396719116389125023
 GameObject:
   m_ObjectHideFlags: 0
