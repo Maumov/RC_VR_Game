@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4366757, g: 0.48427194, b: 0.5645252, a: 1}
+  m_IndirectSpecularColor: {r: 0.43667555, g: 0.48427182, b: 0.5645241, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -180,7 +180,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -204,7 +204,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
 --- !u!1001 &46848707
 PrefabInstance:
@@ -409,21 +409,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Waypoint 008
       objectReference: {fileID: 0}
+    - target: {fileID: 1123775961668131514, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1123775961668131517, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1123775961668131517, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.25
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1123775961668131517, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1123775961668131517, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -16.1
+      value: -10.1
       objectReference: {fileID: 0}
     - target: {fileID: 1123775961668131517, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -995,13 +999,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Waypoint 007
       objectReference: {fileID: 0}
+    - target: {fileID: 1123775961668131514, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1123775961668131517, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1123775961668131517, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -26.4
+      value: -23.4
       objectReference: {fileID: 0}
     - target: {fileID: 1123775961668131517, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1009,7 +1017,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1123775961668131517, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -16.502033
+      value: -12.8
       objectReference: {fileID: 0}
     - target: {fileID: 1123775961668131517, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2174,6 +2182,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car Bot
       objectReference: {fileID: 0}
+    - target: {fileID: 4396719116293325986, guid: 4b45fe8e448e3b845ae51da790ed21d5, type: 3}
+      propertyPath: brakeForce
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 4396719116293325987, guid: 4b45fe8e448e3b845ae51da790ed21d5, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -2218,6 +2230,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4396719116447912107, guid: 4b45fe8e448e3b845ae51da790ed21d5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b4783fbb3623a6d49b650154675a089e, type: 2}
     - target: {fileID: 5567723985709212195, guid: 4b45fe8e448e3b845ae51da790ed21d5, type: 3}
       propertyPath: goal
       value: 
@@ -2458,13 +2474,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Waypoint 005
       objectReference: {fileID: 0}
+    - target: {fileID: 1123775961668131514, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1123775961668131517, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1123775961668131517, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -29.79
+      value: -27.4
       objectReference: {fileID: 0}
     - target: {fileID: 1123775961668131517, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2472,7 +2492,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1123775961668131517, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 25.1
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 1123775961668131517, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2589,7 +2609,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23476
+  m_Name: pb_Mesh22118
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2982,6 +3002,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Waypoint 006
       objectReference: {fileID: 0}
+    - target: {fileID: 1123775961668131514, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1123775961668131517, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -2996,7 +3020,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1123775961668131517, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.46
+      value: -2.9
       objectReference: {fileID: 0}
     - target: {fileID: 1123775961668131517, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3196,13 +3220,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Waypoint 004
       objectReference: {fileID: 0}
+    - target: {fileID: 1123775961668131514, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1123775961668131517, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1123775961668131517, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.43
+      value: -14.2
       objectReference: {fileID: 0}
     - target: {fileID: 1123775961668131517, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3210,7 +3238,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1123775961668131517, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 35.38
+      value: 32.1
       objectReference: {fileID: 0}
     - target: {fileID: 1123775961668131517, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3349,7 +3377,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1210023130}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 29.25, y: 1.5, z: -41.75}
+  m_LocalPosition: {x: 29.9, y: 1.5, z: -23.6}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 113143272}
@@ -4646,6 +4674,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Waypoint 001
       objectReference: {fileID: 0}
+    - target: {fileID: 1123775961668131514, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1123775961668131517, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -4713,13 +4745,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Waypoint 002
       objectReference: {fileID: 0}
+    - target: {fileID: 1123775961668131514, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1123775961668131517, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1123775961668131517, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 32.8
+      value: 28.1
       objectReference: {fileID: 0}
     - target: {fileID: 1123775961668131517, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4774,6 +4810,10 @@ PrefabInstance:
     - target: {fileID: 1123775961668131514, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
       propertyPath: m_Name
       value: Waypoint 003
+      objectReference: {fileID: 0}
+    - target: {fileID: 1123775961668131514, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1123775961668131517, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
       propertyPath: m_RootOrder
@@ -5123,7 +5163,7 @@ GameObject:
   - component: {fileID: 1866131447}
   - component: {fileID: 1866131450}
   - component: {fileID: 1866131449}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5533,7 +5573,7 @@ Transform:
   - {fileID: 566012503}
   - {fileID: 204888643}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2098289482
 GameObject:
@@ -5636,7 +5676,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23432
+  m_Name: pb_Mesh22008
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5805,13 +5845,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Waypoint 000
       objectReference: {fileID: 0}
+    - target: {fileID: 1123775961668131514, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1123775961668131517, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1123775961668131517, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 29.81
+      value: 27.4
       objectReference: {fileID: 0}
     - target: {fileID: 1123775961668131517, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5819,7 +5863,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1123775961668131517, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -15.39
+      value: -12.2
       objectReference: {fileID: 0}
     - target: {fileID: 1123775961668131517, guid: 73128f426475b4344bfe9b3f5a2ac6d6, type: 3}
       propertyPath: m_LocalRotation.w
