@@ -51,6 +51,9 @@ public class CarController : MonoBehaviour
     public void SetIsBreaking(bool value) {
         isBreaking = value;
     }
+    public void ResetCar() {
+        transform.rotation = Quaternion.AngleAxis(0f, Vector3.zero);
+    }
 
 
     void HandleMotor() {
@@ -71,8 +74,8 @@ public class CarController : MonoBehaviour
     void ApplyBraking() {
         frontLeftWheelCollider.brakeTorque = currentBrakeForce;
         frontRightWheelCollider.brakeTorque = currentBrakeForce;
-        backLeftWheelCollider.brakeTorque = currentBrakeForce;
-        backRightWheelCollider.brakeTorque = currentBrakeForce;
+        //backLeftWheelCollider.brakeTorque = currentBrakeForce;
+        //backRightWheelCollider.brakeTorque = currentBrakeForce;
     }
 
     void HandleSteering() {
