@@ -26,9 +26,11 @@ public class CarController : MonoBehaviour
     [SerializeField] private Transform frontRightWheelTransform;
     [SerializeField] private Transform backLeftWheelTransform;
     [SerializeField] private Transform backRightWheelTransform;
+    private GunController gunController;
 
     private void Start() {
         playerInputs = GetComponent<PlayerInputs>();
+        gunController = GetComponent<GunController>();
     }
 
     private void FixedUpdate() {
@@ -53,6 +55,9 @@ public class CarController : MonoBehaviour
     }
     public void ResetCar() {
         transform.rotation = Quaternion.AngleAxis(0f, Vector3.zero);
+    }
+    public void Shoot() {
+        gunController.Shoot();
     }
 
 

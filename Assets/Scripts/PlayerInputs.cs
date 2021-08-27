@@ -8,6 +8,7 @@ public class PlayerInputs : MonoBehaviour
     private const string VERTICAL = "Vertical";
     private const string BRAKE = "Jump";
     private const string RESET = "Reset";
+    private const string SHOOT = "Fire1";
 
     public float horizontalInput;
     public float verticalInput;
@@ -34,6 +35,8 @@ public class PlayerInputs : MonoBehaviour
         carController.SetIsBreaking(isBreaking);
         if(Input.GetButton(RESET))
         carController.ResetCar();
+        if(Input.GetButton(SHOOT))
+        carController.Shoot();
 
     }
 }

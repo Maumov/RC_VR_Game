@@ -8017,6 +8017,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 475928724754915057, guid: b5932ebc8a2e35b41a008e215e11e84e, type: 3}
+      propertyPath: startingGun
+      value: 
+      objectReference: {fileID: 3670020079244819655, guid: 606e00a9595f0a447b714a66ff96d795, type: 3}
     - target: {fileID: 4396719114993428082, guid: b5932ebc8a2e35b41a008e215e11e84e, type: 3}
       propertyPath: m_Layer
       value: 7
