@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CarController : MonoBehaviour
+public class CarController : LivingEntity
 {
     PlayerInputs playerInputs;
 
@@ -28,7 +28,8 @@ public class CarController : MonoBehaviour
     [SerializeField] private Transform backRightWheelTransform;
     private GunController gunController;
 
-    private void Start() {
+    public override void Start() {
+        base.Start();
         playerInputs = GetComponent<PlayerInputs>();
         gunController = GetComponent<GunController>();
     }

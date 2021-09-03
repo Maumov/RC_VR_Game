@@ -9,8 +9,7 @@ public class Gun : MonoBehaviour
     private Transform startingPoint;
     [SerializeField]
     private Projectile projectile;
-    [SerializeField]
-    private float secondsBetweenShoots = 1;
+    public float secondsBetweenShoots = 1;
     [SerializeField]
     private float projectileSpeed = 35;
 
