@@ -34,7 +34,7 @@ public class FollowGoal : MonoBehaviour
         //                                      Time.deltaTime * rotSpeed);
 
 
-        Debug.Log(Vector3.Angle(goal.forward, transform.forward) > brakeAngle && speed > 0.1f);
+        //Debug.Log(Vector3.Angle(goal.forward, transform.forward) > brakeAngle && speed > 0.1f);
         if(Vector3.Angle(goal.forward,transform.forward) > brakeAngle && speed > 0.1f) {
             carController.SetVerticalInput(-1f);
             carController.SetIsBreaking(true);
