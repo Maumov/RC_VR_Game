@@ -319,6 +319,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1426641067557270228, guid: b5932ebc8a2e35b41a008e215e11e84e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1426641067557270228, guid: b5932ebc8a2e35b41a008e215e11e84e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1426641067557270251, guid: b5932ebc8a2e35b41a008e215e11e84e, type: 3}
+      propertyPath: m_SuspensionSpring.damper
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1426641067557270251, guid: b5932ebc8a2e35b41a008e215e11e84e, type: 3}
       propertyPath: m_SidewaysFriction.m_ExtremumSlip
       value: 1
@@ -366,6 +378,18 @@ PrefabInstance:
     - target: {fileID: 4396719116076830245, guid: b5932ebc8a2e35b41a008e215e11e84e, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4396719116255006428, guid: b5932ebc8a2e35b41a008e215e11e84e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4396719116255006428, guid: b5932ebc8a2e35b41a008e215e11e84e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4396719116255006435, guid: b5932ebc8a2e35b41a008e215e11e84e, type: 3}
+      propertyPath: m_SuspensionSpring.damper
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4396719116255006435, guid: b5932ebc8a2e35b41a008e215e11e84e, type: 3}
       propertyPath: m_SidewaysFriction.m_ExtremumSlip
@@ -436,6 +460,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4396719116678586482, guid: b5932ebc8a2e35b41a008e215e11e84e, type: 3}
+      propertyPath: m_SuspensionSpring.damper
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4396719116678586482, guid: b5932ebc8a2e35b41a008e215e11e84e, type: 3}
       propertyPath: m_SidewaysFriction.m_ExtremumSlip
       value: 1
       objectReference: {fileID: 0}
@@ -450,6 +478,14 @@ PrefabInstance:
     - target: {fileID: 4396719116678586482, guid: b5932ebc8a2e35b41a008e215e11e84e, type: 3}
       propertyPath: m_SidewaysFriction.m_AsymptoteValue
       value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4396719116678586483, guid: b5932ebc8a2e35b41a008e215e11e84e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4396719116678586483, guid: b5932ebc8a2e35b41a008e215e11e84e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4396719116890516904, guid: b5932ebc8a2e35b41a008e215e11e84e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -472,6 +508,10 @@ PrefabInstance:
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8240347621741345074, guid: b5932ebc8a2e35b41a008e215e11e84e, type: 3}
+      propertyPath: m_SuspensionSpring.damper
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8240347621741345074, guid: b5932ebc8a2e35b41a008e215e11e84e, type: 3}
       propertyPath: m_SidewaysFriction.m_ExtremumSlip
       value: 1
       objectReference: {fileID: 0}
@@ -486,6 +526,14 @@ PrefabInstance:
     - target: {fileID: 8240347621741345074, guid: b5932ebc8a2e35b41a008e215e11e84e, type: 3}
       propertyPath: m_SidewaysFriction.m_AsymptoteValue
       value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8240347621741345075, guid: b5932ebc8a2e35b41a008e215e11e84e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8240347621741345075, guid: b5932ebc8a2e35b41a008e215e11e84e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5932ebc8a2e35b41a008e215e11e84e, type: 3}

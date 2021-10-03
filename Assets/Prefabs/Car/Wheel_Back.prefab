@@ -42,7 +42,7 @@ WheelCollider:
   m_Radius: 0.5
   m_SuspensionSpring:
     spring: 120
-    damper: 22
+    damper: 10
     targetPosition: 0.5
   m_SuspensionDistance: 0.5
   m_ForceAppPointDistance: 0
@@ -55,9 +55,9 @@ WheelCollider:
     m_AsymptoteValue: 0.8
     m_Stiffness: 1
   m_SidewaysFriction:
-    m_ExtremumSlip: 1.7
-    m_ExtremumValue: 0.7
-    m_AsymptoteSlip: 2.7
-    m_AsymptoteValue: 1
+    m_ExtremumSlip: 1
+    m_ExtremumValue: 1.2
+    m_AsymptoteSlip: 0.8
+    m_AsymptoteValue: 0.8
     m_Stiffness: 1
   m_Enabled: 1
