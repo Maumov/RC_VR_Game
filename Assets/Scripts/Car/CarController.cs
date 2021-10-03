@@ -5,6 +5,9 @@ using UnityEngine;
 public class CarController : LivingEntity
 {
     PlayerInputs playerInputs;
+    Rigidbody rigidbody;
+    [SerializeField] float downForce;
+    [SerializeField] ForceMode forceMode;
 
     [SerializeField] float horizontalInput;
     [SerializeField] float verticalInput;
@@ -12,7 +15,7 @@ public class CarController : LivingEntity
     private float currentBrakeForce;
     private bool isBreaking;
 
-
+    [SerializeField] private WheelTorque wheelTorque;
     [SerializeField] private float motorForce;
     [SerializeField] private float brakeForce;
     [SerializeField] private float maxSteeringAngle;
@@ -32,6 +35,7 @@ public class CarController : LivingEntity
         base.Start();
         playerInputs = GetComponent<PlayerInputs>();
         gunController = GetComponent<GunController>();
+        rigidbody = GetComponent<Rigidbody>();
     }
 
     private void FixedUpdate() {
@@ -61,15 +65,23 @@ public class CarController : LivingEntity
         gunController.Shoot();
     }
 
+    public enum WheelTorque
+    {
+        front, back, both
+    }
 
     void HandleMotor() {
-        frontLeftWheelCollider.motorTorque = verticalInput * motorForce;
-        frontRightWheelCollider.motorTorque = verticalInput * motorForce;
-        backLeftWheelCollider.motorTorque = verticalInput * motorForce;
-        backRightWheelCollider.motorTorque = verticalInput * motorForce;
-
+        if(wheelTorque.Equals(WheelTorque.front) || wheelTorque.Equals(WheelTorque.both)) {
+            frontLeftWheelCollider.motorTorque = verticalInput * motorForce;
+            frontRightWheelCollider.motorTorque = verticalInput * motorForce;
+        }
+        if(wheelTorque.Equals(WheelTorque.back) || wheelTorque.Equals(WheelTorque.both)) {
+            backLeftWheelCollider.motorTorque = verticalInput * motorForce;
+            backRightWheelCollider.motorTorque = verticalInput * motorForce;
+        }
         currentBrakeForce = isBreaking ? brakeForce : 0f;
         ApplyBraking();
+        rigidbody.AddForce(transform.up * downForce, forceMode);
         //if(isBreaking) {
             
         //} else {
